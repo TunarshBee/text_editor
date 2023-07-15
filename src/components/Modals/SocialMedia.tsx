@@ -23,9 +23,6 @@ const SocialMedia: React.FC<LinkAndVideoProps> = ({
   };
 
   const handleSubmit = () => {
-    console.log(provider);
-    console.log(code);
-    console.log(url);
     const linkContent = `<a href="${url}" target="_blank">${code}</a>`;
     LinkorVideo(linkContent, "link");
     incrementWordCount()
