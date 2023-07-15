@@ -237,6 +237,12 @@ button {
   margin-bottom: 2%;
 }
 
+.ql-toolbar .ql-snow {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
 @media (max-width: 576px) {
   .ql-editor{
     width: 57%;
