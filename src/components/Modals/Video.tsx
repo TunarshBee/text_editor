@@ -20,13 +20,10 @@ const handleSubmit = () => {
   let videoId =''
 if(match){
   videoId = match[1];
-  setUrl(`https://www.youtube.com/embed/${videoId}`);
 }
-setUrl(``);
   LinkorVideo(`https://www.youtube.com/embed/${videoId}`, "video");
   incrementWordCount();
   isClose();
-  console.log(`https://www.youtube.com/embed/${videoId}`);
 };
 
   return (
