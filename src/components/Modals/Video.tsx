@@ -10,6 +10,7 @@ const Video: React.FC<LinkAndVideoProps> = ({ LinkorVideo, isOpen, isClose }) =>
   const [url, setUrl] = useState("");
 
   const handleProviderInput = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    console.log(provider)
     setProvider(e.target.value);
   };
 

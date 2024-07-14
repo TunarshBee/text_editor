@@ -19,6 +19,7 @@ const SocialMedia: React.FC<LinkAndVideoProps> = ({
   const [url, setUrl] = useState("");
 
   const handleProviderInput = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    console.log(provider)
     setProvider(e.target.value);
   };
 
