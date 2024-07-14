@@ -16,3 +16,29 @@ jobs:
 
       - name: Run tests
         run: yarn run test
+
+  build_storybook:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code from repo
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Buid Storybook
+        run: yarn run build-storybook
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code from repo
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Buid the app
+        run: yarn run build
